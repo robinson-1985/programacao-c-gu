@@ -14,15 +14,16 @@ e apresente a soma no final. */
 int main(){
     int numero, soma = 0;
 
-    printf("Informe um número: ");
-    scanf("%d",&numero);
-
-    while (numero != 0) {
-        soma = soma + numero;
-        //entrada
+    do {
+       // entrada
         printf("Informe um número: ");
         scanf("%d",&numero);
+
+        //processamento
+        soma = soma + numero;
     }
+
+    while (numero != 0);
 
     printf("A soma é %d\n", soma);
 
